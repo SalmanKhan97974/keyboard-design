@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color-01: #24409d;
+    --background-color-02: #1369c3;
+    --white: #FFFFFF;
+    --keyboard-background: #283693;
+    --span-background: #24307e;
+    --hover-color : #f30258;
+}
+
+.keyboard{
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--background-color-01) , var(--background-color-02));
+    color: var(--white);
+    display: grid;
+    place-items: center;
+}
+
+.my-keyboard{
+    background-color: var(--keyboard-background);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row-01{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+}
+
+.row-02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.row-03{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.row-04{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    gap: 5px;
+}
+
+span{
+    background-color: var(--span-background);
+    padding: 6px 10px 6px 10px;
+    border-radius: 5px;
+}
+
+.space{
+    padding-inline: 70px;
+}
+
+.arrow {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.mark {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: var(--hover-color);
+}
+
+span.search{
+    padding: 6px 20px 6px 20px;
+}
